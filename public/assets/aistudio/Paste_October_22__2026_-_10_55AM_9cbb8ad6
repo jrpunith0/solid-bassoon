@@ -1,0 +1,793 @@
+1. ಮೊದಲು ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಇರಬೇಕಾದ ಸೌಲಭ್ಯಗಳು
+
+
+
+
+
+
+
+
+
+1. Video Editing Studio
+
+ವೀಡಿಯೊ ಅಪ್‌ಲೋಡ್, ಕಟ್, ಟ್ರಿಮ್, Split, Merge, Crop, Rotate ಮತ್ತು Timeline Editing.
+
+
+
+
+
+
+
+
+
+
+
+
+2. Text, Effects & Music
+
+ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಟೆಕ್ಸ್ಟ್, ಶೀರ್ಷಿಕೆಗಳು, ಸಬ್‌ಟೈಟಲ್ಸ್, Transitions, Filters, Background Music ಮತ್ತು Voice-over.
+
+
+
+
+
+
+
+
+
+
+
+
+3. Social Media Video Maker
+
+YouTube 16:9, Instagram Reels 9:16, YouTube Shorts 9:16 ಮತ್ತು Square 1:1 ವೀಡಿಯೊ ಫಾರ್ಮ್ಯಾಟ್‌ಗಳು.
+
+
+
+
+
+
+
+
+
+
+
+
+4. AI Video Tools
+
+ಸ್ಕ್ರಿಪ್ಟ್‌ನಿಂದ ವೀಡಿಯೊ ತಯಾರಿಕೆ, Auto Captions, Thumbnail Maker, AI Voice-over ಮತ್ತು Storyboard ಸಹಾಯ.
+
+
+
+ಗಮನಿಸಿ: ಸಾಮಾನ್ಯ ವೀಡಿಯೊ ಎಡಿಟಿಂಗ್ ಅನ್ನು ಬ್ರೌಸರ್‌ನಲ್ಲೇ ಮಾಡಬಹುದು. AI ವೀಡಿಯೊ ಜನರೇಷನ್, ದೊಡ್ಡ ಫೈಲ್‌ಗಳ Export ಮತ್ತು ಕೆಲವು ಸುಧಾರಿತ ಫೀಚರ್‌ಗಳಿಗೆ ಪ್ರತ್ಯೇಕ API ಅಥವಾ ಸರ್ವರ್ ಅಗತ್ಯವಾಗಬಹುದು.
+2. ಯಾವ Tool ಬಳಸಿ Website ನಿರ್ಮಿಸಬೇಕು?
+
+
+
+
+
+
+
+
+
+Option A — Google AI Studio
+
+AI ಸಹಾಯದಿಂದ ವೆಬ್‌ಸೈಟ್‌ನ ಮೊದಲ ಆವೃತ್ತಿ, UI ಮತ್ತು ಕೋಡ್ ರಚಿಸಲು.
+
+Google AI Studio ತೆರೆಯಿರಿ
+
+
+
+
+
+
+
+
+
+
+
+
+Option B — Google Antigravity
+
+ಬಹು ಫೈಲ್‌ಗಳಿರುವ ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಮಿಸಲು, ಕೋಡ್ ಎಡಿಟ್ ಮಾಡಲು, ಟೆಸ್ಟ್ ಮಾಡಲು ಮತ್ತು ಸ್ಥಳೀಯವಾಗಿ ರನ್ ಮಾಡಲು.
+
+Google Antigravity ತೆರೆಯಿರಿ
+
+
+
+ನಿಮ್ಮ ಗುರಿಗೆ, ಮೊದಲು AI Studio ಮೂಲಕ ಪ್ರೋಟೋಟೈಪ್ ಮಾಡಬಹುದು; ಸಂಪೂರ್ಣ ಎಡಿಟಿಂಗ್ ಕಾರ್ಯಗಳು, ಫೈಲ್ ಸಂಗ್ರಹಣೆ ಮತ್ತು Export ಅನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು Antigravity ಬಳಸಬಹುದು.
+3. ಹಂತ ಹಂತವಾಗಿ Website ನಿರ್ಮಿಸುವ ವಿಧಾನ
+1. Step 1 — ಹೊಸ Project ರಚಿಸಿ
+   
+   AI Studio ತೆರೆಯಿರಿ. Build ಆಯ್ಕೆಗೆ ಹೋಗಿ ಹೊಸ Web App ಪ್ರಾಜೆಕ್ಟ್ ಆರಂಭಿಸಿ.
+2. Step 2 — Master Prompt ಹಾಕಿ
+   
+   ಕೆಳಗೆ ಕೊಟ್ಟಿರುವ ಸಂಪೂರ್ಣ Prompt ಅನ್ನು ಕಾಪಿ ಮಾಡಿ AI Studio ಅಥವಾ Antigravityಗೆ ನೀಡಿ.
+3. Step 3 — Website ರಚಿಸಲು ಹೇಳಿ
+   
+   Dashboard, Video Editor, Media Library, Text Editor, Audio Tools ಮತ್ತು Export ವಿಭಾಗಗಳನ್ನು ನಿರ್ಮಿಸಲು ಸೂಚಿಸಿ.
+4. Step 4 — ನಿಜವಾದ Editing ಸೌಲಭ್ಯಗಳನ್ನು ಸೇರಿಸಿ
+   
+   ವೀಡಿಯೊ ಅಪ್‌ಲೋಡ್, Preview, Timeline, Trim, Split, Text Overlay, Audio ಮತ್ತು Transitions ಕಾರ್ಯನಿರ್ವಹಿಸುವಂತೆ ಮಾಡಿಸಿ.
+5. Step 5 — Save ಮತ್ತು Export ಪರೀಕ್ಷಿಸಿ
+   
+   Project ಉಳಿಸುವುದು, ಮರುತೆರೆಯುವುದು, MP4 Export ಮತ್ತು ಬೇರೆ ಬೇರೆ ವೀಡಿಯೊ ಗಾತ್ರಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ.
+6. Step 6 — ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಬಳಸಿ
+   
+   Web App ಅನ್ನು ಸ್ಥಳೀಯವಾಗಿ ರನ್ ಮಾಡಿ. Windows‌ನಲ್ಲಿ ಬಳಸಲು ಬೇಕಾದರೆ ನಂತರ Desktop App ರೂಪಕ್ಕೆ ಪ್ಯಾಕೇಜ್ ಮಾಡಿಸಿ.
+4. Copy ಮಾಡಿ ಬಳಸುವ Master Prompt
+ಕೆಳಗಿನ Prompt ಅನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ನಿಮ್ಮ AI Website Builderನಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ.
+Build a Complete Video Editing Studio Web App
+Build a professional, modern, responsive video editing website called Creator Studio Pro.
+1. Main Requirements
+Create a functional video editor, not just a UI mockup. All visible buttons and controls must perform their stated actions. Use Kannada as the default interface language, with a Kannada/English language switch. Support desktop and mobile layouts and dark/light themes.
+2. Dashboard
+Create dashboard cards for:
+- New Video Project
+- Video Editor
+- YouTube Video Maker
+- YouTube Shorts Maker
+- Instagram Reels Maker
+- Facebook Video Maker
+- AI Video Tools
+- Thumbnail Maker
+- Captions and Subtitles
+- Audio and Voice-over
+- My Projects
+- Media Library
+- Exported Videos
+- Settings and Backup
+3. Video Editing Workspace
+Create a professional editing interface with:
+- Media import for supported video, image and audio files.
+- Video preview player with play, pause, seek and volume controls.
+- Multi-track timeline for video, audio, images, titles and subtitles.
+- Trim, split, merge, reorder and delete clips.
+- Crop, rotate, resize, speed adjustment and volume control.
+- Text overlays, animated titles, transitions and filters.
+- Undo and redo, zoom timeline and autosave.
+- Keyboard shortcuts and project recovery.
+Use HTML5 video and audio playback and an appropriate browser-based editing engine. Use FFmpeg.wasm or another suitable media-processing solution for actual rendering where supported. If a browser codec or file size is unsupported, show a clear error instead of pretending the operation succeeded.
+4. Social Media Presets
+Provide these output presets:
+- YouTube: 1920x1080, 16:9.
+- YouTube Shorts: 1080x1920, 9:16.
+- Instagram Reels: 1080x1920, 9:16.
+- Instagram Square: 1080x1080, 1:1.
+- Facebook Landscape: 1920x1080, 16:9.
+- Custom width, height and frame rate.
+5. Text, Captions and Audio
+- Add editable titles and text overlays.
+- Import and edit SRT subtitle files.
+- Provide manual subtitle creation and timing controls.
+- Add background music and voice-over tracks.
+- Provide audio trimming, volume adjustment and fade-in/fade-out.
+- Add Kannada and English fonts where supported.
+- Include optional AI-assisted scripts, captions and voice-over using configured APIs.
+- Never claim that automatic speech recognition or AI generation works unless the required engine or API is connected.
+6. AI Creator Tools
+Create separate tools for:
+- Script-to-video planning.
+- Scene and storyboard generation.
+- AI image and video generation integrations.
+- Automatic caption generation.
+- Video title and description suggestions.
+- Hashtag suggestions.
+- Thumbnail creation with editable text, images and layouts.
+Clearly distinguish working local features from features that require an API key or paid external service.
+7. YouTube, Instagram and Facebook
+Provide editable channel/profile links at the top of the dashboard.
+Allow the user to save their own YouTube, Instagram and Facebook URLs.
+Add export-ready settings for each platform.
+Add publishing workflow integration only through supported official APIs and authorized user accounts. If publishing is not connected, provide a clear manual export and upload workflow. Do not promise direct publishing without the necessary API permissions.
+8. Projects and File Storage
+- Create, rename, duplicate, open and delete projects.
+- Save project metadata and editable timeline information.
+- Allow the user to reopen projects and continue editing.
+- Store imported media references and exported video records.
+- Provide configurable local storage and download/export options.
+- Warn users before deleting media required by a project.
+- Add backup and restore for project data.
+- Do not store large video files inside localStorage.
+- Clearly explain browser storage limits and provide an appropriate IndexedDB or file-system-based solution.
+9. Export System
+Provide export settings for:
+- MP4 where supported.
+- Resolution and aspect ratio.
+- Frame rate and quality/bitrate.
+- Audio inclusion and volume.
+- Export progress, cancellation and error handling.
+- Download completed videos.
+- Save thumbnails and project files separately.
+Use a real rendering pipeline. Do not generate a fake download link or report a successful export when rendering has failed. If full MP4 encoding is unsupported, explain the limitation and offer a suitable alternative.
+10. Technical Architecture
+Use a maintainable component-based frontend, TypeScript and a suitable modern framework such as React.
+Use Web Workers where appropriate to keep the interface responsive.
+Use a suitable video rendering engine and WebAssembly processing where feasible.
+Keep API keys on a secure backend; never expose secret API keys in frontend code.
+Use a backend only where needed for authentication, cloud storage, AI integrations or server-side rendering.
+Include configuration files, dependency installation instructions and environment variable examples.
+11. Security and Reliability
+Validate uploaded file types and file sizes. Handle corrupt files, unsupported codecs, insufficient memory and interrupted exports. Ask for confirmation before deleting projects. Keep personal media private and do not upload it to external services without user consent.
+12. Required Deliverables
+Generate the complete project structure and working source code. Implement the core features first, then add advanced features in stages.
+Provide:
+1. Project folder structure.
+2. Complete source files.
+3. Setup and installation commands.
+4. Local development and launch instructions.
+5. Build and packaging instructions for Windows if supported.
+6. A feature test checklist.
+7. Clear instructions for configuring optional AI APIs.
+8. A list of features that are fully implemented and features that still require integration.
+Start by building a working dashboard and one functional editing workflow from media import to preview, timeline editing and export. Test it before proceeding to advanced features. Do not substitute decorative controls for actual functionality.
+
+
+
+
+5. Website ನಿರ್ಮಾಣವಾದ ನಂತರ ಈ Prompts ಬಳಸಿ
+ಒಂದೇ ಬಾರಿ ಎಲ್ಲಾ ಫೀಚರ್‌ಗಳು ಸರಿಯಾಗಿ ಬರದಿದ್ದರೆ, ಒಂದೊಂದಾಗಿ ಕೆಳಗಿನ ಸೂಚನೆಗಳನ್ನು ನೀಡಿ.
+Prompt 1 — Video Editor
+
+ Copy
+ಮೊದಲು ಮುಖ್ಯ ಎಡಿಟಿಂಗ್ ಸೌಲಭ್ಯಗಳನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಿ.
+
+
+Prompt 2 — AI Features
+
+ Copy
+AI ಸ್ಕ್ರಿಪ್ಟ್, ಕ್ಯಾಪ್ಷನ್, ಥಂಬ್‌ನೇಲ್ ಮತ್ತು ವಾಯ್ಸ್‌ಓವರ್.
+
+
+Prompt 3 — Social Media
+
+ Copy
+ನಿಮ್ಮ ಚಾನೆಲ್ ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಫಾರ್ಮ್ಯಾಟ್‌ಗಳು.
+
+
+Prompt 4 — Final Testing
+
+ Copy
+ಎಲ್ಲಾ ಬಟನ್‌ಗಳು, ಪ್ರಾಜೆಕ್ಟ್ ಸೇವ್ ಮತ್ತು Export ಅನ್ನು ಪರೀಕ್ಷಿಸಿ.
+
+
+6. ನಿಮಗೆ ಯಾವ ರೀತಿಯ Video Editor ಬೇಕು?
+ನಿಮ್ಮ ಅಗತ್ಯಕ್ಕೆ ತಕ್ಕಂತೆ ಮುಂದಿನ ಹಂತವನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.
+1. Website ಎಲ್ಲಿ ಬಳಸಬೇಕು?
+
+ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಮಾತ್ರ
+
+Windows ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Desktop App
+
+Website + Windows Desktop App
+
+
+2. ಯಾವ ರೀತಿಯ Editing ಬೇಕು?
+
+Basic — Cut, Trim, Text, Music
+
+Professional — Multi-track Timeline, Effects, Transitions
+
+AI Video Generator — Script ನಿಂದ Video
+
+ಎಲ್ಲಾ ಸೌಲಭ್ಯಗಳು
+
+
+3. ವೀಡಿಯೊಗಳನ್ನು ಎಲ್ಲಿ ಉಳಿಸಬೇಕು?
+
+ನನ್ನ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಮಾತ್ರ (Local)
+
+Cloud Storage
+
+Local + Cloud Backup
+
+
+4. AI ಸೌಲಭ್ಯಗಳು
+
+ಸಾಮಾನ್ಯ Editing ಮಾತ್ರ
+
+Editing + AI Script, Captions, Thumbnail
+
+ಪೂರ್ಣ AI Video Generation
+
+ನನ್ನ Websiteಗಾಗಿ ಮುಂದಿನ ಹಂತದ Prompt ನೀಡಿ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ನನಗೆ Video Editor Website ನಿರ್ಮಿಸಲು ಮುಂದಿನ ಹಂತದ ಸಂಪೂರ್ಣ build prompt ಮತ್ತು step-by-step ಸೂಚನೆಗಳನ್ನು ನೀಡಿ. Platform: Website + Windows Desktop App. Editing: Professional multi-track editing. Storage: Local computer only. AI: Editing + AI script/captions/thumbnail. Kannada default, English option; editable YouTube, Instagram and Facebook links at the top; functional controls, tested exports and clear setup instructions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Professional Video Editor Website + Windows App
+ನಿಮ್ಮ ಅಗತ್ಯಕ್ಕೆ ತಕ್ಕಂತೆ Creator Studio Pro ಎಂಬ ಹೆಸರಿನಲ್ಲಿ ವೃತ್ತಿಪರ Video Editing ವ್ಯವಸ್ಥೆಯನ್ನು ನಿರ್ಮಿಸೋಣ. ಇದು ವೆಬ್‌ಸೈಟ್ ಆಗಿಯೂ Windows ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Desktop App ಆಗಿಯೂ ಕಾರ್ಯನಿರ್ವಹಿಸಬೇಕು. ನಿಮ್ಮ ವೀಡಿಯೊಗಳು, ಪ್ರಾಜೆಕ್ಟ್‌ಗಳು ಮತ್ತು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿದ ಫೈಲ್‌ಗಳು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲೇ ಉಳಿಯುವಂತೆ ವಿನ್ಯಾಸಗೊಳಿಸೋಣ.
+
+
+
+
+
+
+
+blackmagicdesign.com
+
+
+Multi-track Editor
+
+Video, audio, text, image ಮತ್ತು subtitle tracks.
+
+
+Local Storage
+
+ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲೇ media ಮತ್ತು projects ಉಳಿಸುವುದು.
+
+
+Kannada + English
+
+ಕನ್ನಡ ಡೀಫಾಲ್ಟ್, ಇಂಗ್ಲಿಷ್ ಆಯ್ಕೆ.
+
+
+AI Creator Tools
+
+Script, captions ಮತ್ತು thumbnail tools.
+
+
+
+
+1. ಶಿಫಾರಸು ಮಾಡಿರುವ ತಂತ್ರಜ್ಞಾನ
+ಭಾಗ	ತಂತ್ರಜ್ಞಾನ
+Website UI	React + TypeScript + Vite
+Desktop App	Electron
+Professional timeline	Remotion ಅಥವಾ ಸ್ವಂತ timeline engine
+Video rendering	FFmpeg
+Project data	SQLite
+Local media	ಬಳಕೆದಾರ ಆಯ್ಕೆಮಾಡುವ ಸ್ಥಳೀಯ ಫೋಲ್ಡರ್
+AI	ಐಚ್ಛಿಕ API integration
+Testing	Vitest + Playwright
+
+ಮುಖ್ಯ ನಿರ್ಧಾರ: ವೆಬ್‌ಸೈಟ್ ಮತ್ತು Desktop App ಎರಡಕ್ಕೂ ಒಂದೇ UI/codebase ಬಳಸಬಹುದು. ಆದರೆ ಬ್ರೌಸರ್‌ನಲ್ಲಿನ ಫೈಲ್ ಪ್ರವೇಶ ಮತ್ತು Windows Desktop‌ನ ಫೈಲ್ ಪ್ರವೇಶ ಒಂದೇ ರೀತಿಯಲ್ಲ. ಆದ್ದರಿಂದ local file storage ಮತ್ತು FFmpeg export‌ಗಾಗಿ ಪ್ರತ್ಯೇಕ adapter ಅಥವಾ desktop backend ಅಗತ್ಯ. Remotion ಸಹಾಯಕವಾಗಬಹುದು; ಅದು ಒಂದೇ ಒಂದು ಪೂರ್ಣ multi-track editor ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಒದಗಿಸುವುದಿಲ್ಲ.
+
+ಸ್ಥಳೀಯ ವೀಡಿಯೊಗಳನ್ನು AI ಸೇವೆಗಳಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡದೇ ಇಡುವುದು ನಿಮ್ಮ ಪ್ರಮುಖ ನಿಯಮವಾಗಿರಲಿ. AIಗೆ ಕಳುಹಿಸುವ ಸ್ಕ್ರಿಪ್ಟ್ ಅಥವಾ ಪಠ್ಯಕ್ಕೆ ಬಳಕೆದಾರರ ಅನುಮತಿ ಕಡ್ಡಾಯವಾಗಿರಲಿ.
+2. ಸಂಪೂರ್ಣ Master Build Prompt
+ಈ Prompt ಅನ್ನು ಸಂಪೂರ್ಣವಾಗಿ Google Antigravity ಅಥವಾ Google AI Studio Build ವಿಭಾಗದಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ. ಇದು ಕೇವಲ ವಿನ್ಯಾಸವಲ್ಲ; ನಿಜವಾದ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಮಿಸಲು ಸೂಚಿಸುತ್ತದೆ.
+MASTER BUILD PROMPT — CREATOR STUDIO PRO
+Professional Video Editing Website + Windows Desktop Application
+Act as a senior software architect, video editing engineer, UI/UX designer, and QA engineer.
+
+Build a production-oriented video editing application named Creator Studio Pro with a professional multi-track video editor, local-only project storage, Kannada and English language support, optional AI creator tools, and a Windows desktop application.
+
+Do not build only a landing page or a visual prototype. Build a working application with real functionality, clear error handling, and automated tests.
+PHASE 1 — PROJECT ARCHITECTURE
+Use:
+- React and TypeScript for the user interface.
+- Vite for frontend development.
+- Electron for the Windows desktop application.
+- SQLite for local project metadata and settings in desktop mode.
+- FFmpeg/FFmpeg.wasm or another suitable rendering engine for video processing.
+- IndexedDB and the browser File System Access API where supported for browser-based local workflows.
+- Vitest for unit tests and Playwright for UI and end-to-end tests.
+Use a maintainable modular architecture. Separate the editor UI, timeline state, media management, project serialization, rendering, storage adapters, and AI integrations.
+
+Create two application targets:
+1. Browser-based website.
+2. Windows desktop application.
+Reuse the same editor UI and business logic where possible.
+PHASE 2 — DESIGN SYSTEM AND LANGUAGE
+Create a premium dark-theme editing interface with an optional light theme.
+
+Default language: Kannada.
+Secondary language: English.
+
+All navigation items, tooltips, dialogs, errors, settings and buttons must support both languages.
+
+Add a persistent language switch.
+
+Create a responsive interface with:
+- Left sidebar for projects and media.
+- Central video preview.
+- Multi-track timeline at the bottom.
+- Right inspector panel for clip properties.
+- Top toolbar for undo, redo, save, preview and export.
+Use accessible controls, keyboard navigation and clear loading indicators.
+PHASE 3 — DASHBOARD
+Create functional dashboard sections for:
+- New Project.
+- Open Recent Project.
+- Video Editor.
+- Media Library.
+- Audio Library.
+- Titles and Subtitles.
+- AI Script Assistant.
+- Caption Editor.
+- Thumbnail Maker.
+- Export Queue.
+- YouTube Settings.
+- Instagram Settings.
+- Facebook Settings.
+- Application Settings.
+- Storage and Backup.
+Allow users to configure and edit their own YouTube, Instagram and Facebook profile URLs. Display these links in the top header and provide copy and open-link actions.
+
+Never hardcode the user's account links.
+PHASE 4 — PROJECT MANAGEMENT
+Implement:
+- Create, open, save, rename, duplicate and delete projects.
+- Save projects with versioned JSON timeline documents.
+- Store project metadata in SQLite in desktop mode.
+- Store media files in a user-selected local folder.
+- Allow projects to be reopened after application restart.
+- Provide autosave, recovery and undo/redo.
+- Track missing media files and allow users to relink them.
+- Add project archive and restore.
+- Add confirmation before destructive actions.
+- Maintain a project-level asset manifest.
+Never store large video binaries in SQLite or browser localStorage. Store media on disk and retain validated paths or file references in project metadata.
+
+Do not delete the original source media when editing or exporting.
+PHASE 5 — PROFESSIONAL MULTI-TRACK TIMELINE
+Implement a real editable timeline with:
+- Multiple video tracks.
+- Multiple audio tracks.
+- Image tracks.
+- Text/title tracks.
+- Subtitle tracks.
+- Drag-and-drop clip positioning.
+- Clip selection, move, trim, split and delete.
+- Ripple delete and clip snapping.
+- Timeline zoom and horizontal scrolling.
+- Track visibility, locking, muting and solo controls.
+- Playhead movement and frame-aware seeking.
+- Clip duration and position editing.
+- Undo and redo history.
+- Keyboard shortcuts.
+- Audio waveform display.
+- Clip thumbnails where supported.
+- Timeline serialization and restoration.
+Each clip must have a stable ID, source reference, track ID, timeline start, source in-point, source out-point, duration and relevant effect properties.
+
+Use a single, well-defined timebase. Handle overlapping clips, gaps, transitions and audio synchronization correctly.
+
+Timeline actions must update the saved project model and preview. Do not implement fake drag-and-drop interactions.
+PHASE 6 — VIDEO PREVIEW AND CLIP INSPECTOR
+Implement:
+- Play, pause, seek and frame stepping.
+- Preview resolution settings.
+- Playback speed controls.
+- Clip transform controls: position, scale, crop and rotation.
+- Opacity and volume controls.
+- Brightness, contrast and saturation.
+- Fade-in and fade-out.
+- Clip speed adjustment.
+- Text overlays.
+- Image overlays.
+- Basic transitions and effect parameters.
+The preview must reflect the current timeline and clip properties. Use proxies or reduced-resolution previews where needed.
+
+Handle unsupported codecs, damaged files and unavailable media with meaningful errors.
+PHASE 7 — AUDIO AND SUBTITLES
+Implement:
+- Import audio files.
+- Trim and split audio.
+- Adjust gain and mute.
+- Fade-in and fade-out.
+- Multiple audio tracks.
+- Import and export SRT subtitles.
+- Create and edit subtitle segments.
+- Adjust subtitle timing and duration.
+- Choose supported fonts, font sizes, colours, outlines and positions.
+- Support Kannada and English text rendering.
+- Provide manual caption editing when automatic transcription is unavailable.
+Keep audio and subtitle timing synchronized during export.
+PHASE 8 — SOCIAL MEDIA PRESETS
+Provide:
+- YouTube landscape: 1920 × 1080.
+- YouTube Shorts: 1080 × 1920.
+- Instagram Reels: 1080 × 1920.
+- Square video: 1080 × 1080.
+- Facebook landscape: 1920 × 1080.
+- Custom resolution and frame rate.
+Allow users to switch aspect ratios and preview the crop before export.
+
+Provide editable title, description, hashtag and thumbnail preparation tools for social media.
+
+Publishing must remain a manual export/upload workflow unless a supported, authorized official API integration is configured.
+PHASE 9 — REAL VIDEO EXPORT
+Create a real export pipeline, not a simulated download.
+
+Implement:
+- MP4 export with H.264 video and AAC audio where supported.
+- Resolution and frame-rate selection.
+- Quality/bitrate settings.
+- Audio inclusion and volume.
+- Export progress and cancellation.
+- Temporary-file cleanup.
+- Error recovery and disk-space checks.
+- Output folder selection.
+- Export history.
+- Validation of the finished output file.
+Render the timeline using a real media-processing pipeline. Account for clip order, tracks, overlays, transitions, timing, transformations and audio mixing.
+
+Use a suitable FFmpeg build in desktop mode. Use FFmpeg.wasm or another appropriate browser-compatible renderer for supported browser workflows.
+
+If a feature cannot be rendered by the selected engine, disable it for that export or explain the limitation. Never silently omit an effect.
+
+Verify export success by checking process exit status, output existence, file size and media metadata. Where available, run a playback or decoding validation test.
+PHASE 10 — LOCAL-ONLY STORAGE AND PRIVACY
+The default application must not upload user videos, audio, thumbnails or projects to a cloud storage service.
+
+In desktop mode:
+- Store project data in a local application data directory.
+- Store SQLite database locally.
+- Allow users to select media and output folders.
+- Support portable project archives.
+- Provide backup and restore to a user-selected folder.
+- Do not send media or telemetry externally without explicit consent.
+In browser mode:
+- Explain browser storage limitations.
+- Use IndexedDB and supported local file APIs.
+- Ask users to reselect files when browser permissions or file references are lost.
+- Do not claim browser data is permanently stored if it may be cleared by the browser.
+Use a secure Electron configuration:
+- contextIsolation enabled.
+- nodeIntegration disabled.
+- sandbox enabled where compatible.
+- A narrow, validated preload API.
+- Strict Content Security Policy.
+- No arbitrary shell command execution from renderer input.
+- Validate all IPC requests and file paths.
+Do not expose filesystem access or unrestricted FFmpeg command execution to untrusted frontend input.
+PHASE 11 — AI CREATOR TOOLS
+Create optional AI modules for:
+- Script writing and scene planning.
+- Kannada and English caption assistance.
+- Title and description suggestions.
+- Thumbnail layout and text suggestions.
+- Hashtag suggestions.
+- Storyboard generation.
+AI integrations must be modular and optional.
+
+AI requests may require an external service and an API key. Never embed secret API keys in frontend code or distribute private keys inside the Windows application.
+
+Use a secure API integration where needed, or provide local-model integration as a separate configurable option.
+
+Explain exactly what data will leave the computer before any external AI request. Obtain user consent before sending text, media or transcripts externally.
+
+Do not display generated captions, thumbnails or scripts as successful results until the relevant operation actually completes.
+
+If AI is not configured, keep manual editing tools fully functional and show setup instructions.
+PHASE 12 — ERROR HANDLING AND PERFORMANCE
+Handle:
+- Large video files.
+- Insufficient RAM or disk space.
+- Unsupported codecs.
+- Corrupt or incomplete media.
+- Interrupted rendering.
+- Missing source files.
+- Browser compatibility problems.
+- Cancelled jobs.
+- Permission errors.
+- Failed project saves.
+Use background workers or processes for expensive operations. Keep the UI responsive and show meaningful progress.
+
+Implement safe cleanup of temporary files without deleting original media.
+PHASE 13 — TESTING AND QUALITY ASSURANCE
+Create automated tests for:
+- Project creation and reopening.
+- Timeline editing and undo/redo.
+- Clip trimming and splitting.
+- Multi-track synchronization.
+- Subtitle timing.
+- Project persistence.
+- Missing-media relinking.
+- Export cancellation and error handling.
+- Social media presets.
+- Kannada and English switching.
+- Local-only storage behaviour.
+- Electron security boundaries.
+Create a reproducible sample project and short test media fixtures.
+
+Run the build, automated tests and an end-to-end workflow from importing sample media to producing and validating an exported MP4.
+
+Do not claim that tests passed unless they were actually executed. Report failed tests and remaining limitations honestly.
+PHASE 14 — WINDOWS BUILD AND DOCUMENTATION
+Provide:
+- Complete source code and project folder structure.
+- package.json scripts.
+- Dependency installation instructions.
+- Development launch instructions.
+- Browser build instructions.
+- Windows desktop development instructions.
+- Windows installer build using a suitable packaging tool such as electron-builder.
+- Configuration examples for optional AI services.
+- Backup and restore instructions.
+- Troubleshooting documentation.
+- A feature-completion checklist.
+The Windows installer must package the required application dependencies and a compatible FFmpeg binary where licensing and redistribution requirements permit.
+
+Document FFmpeg and other third-party licenses. Do not bundle unlicensed codecs or claim that an unsigned installer is code-signed.
+IMPLEMENTATION ORDER
+Build in this order:
+1. Project setup and application shell.
+2. Local project and media management.
+3. Preview player and timeline model.
+4. Functional multi-track editing.
+5. Audio, titles and subtitles.
+6. Real video rendering and MP4 export.
+7. Local persistence and recovery.
+8. Kannada and English interface.
+9. Social media presets and editable profile links.
+10. Optional AI tools.
+11. Automated testing and Windows installer.
+After each phase, build and test the application before continuing.
+
+Final requirement: deliver a usable video editor with real, tested core editing and export functionality. Provide exact commands to run it locally. Clearly label anything incomplete. Do not stop after creating the dashboard or a static interface.
+
+
+
+
+3. Google Antigravityನಲ್ಲಿ ಹಂತ ಹಂತವಾಗಿ Build ಮಾಡುವುದು
+
+
+
+
+
+
+
+
+
+ಹಂತ 1 — Project ರಚಿಸಿ
+
+Antigravity ತೆರೆಯಿರಿ. ಹೊಸ project folder ರಚಿಸಿ: creator-studio-pro. ಆ folder ಅನ್ನು workspace ಆಗಿ ತೆರೆಯಿರಿ.
+
+
+
+
+
+
+
+
+
+
+
+ಹಂತ 2 — Master Prompt ನೀಡಿ
+
+ಮೇಲಿನ Prompt ಅನ್ನು ಪೇಸ್ಟ್ ಮಾಡಿ. ಮೊದಲು architecture, project structure ಮತ್ತು ಕಾರ್ಯನಿರ್ವಹಿಸುವ dashboard ನಿರ್ಮಿಸಲು ಹೇಳಿ. ನಂತರ ಉಳಿದ phases ಮುಂದುವರಿಸಿ.
+
+
+
+
+
+
+
+
+
+
+
+ಹಂತ 3 — Timeline ಕಾರ್ಯಗತಗೊಳಿಸಿ
+
+ಒಂದೇ ಸಮಯದಲ್ಲಿ ಎಲ್ಲವನ್ನೂ ನಿರ್ಮಿಸಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ. ಮೊದಲು import, preview, trim, split, timeline save/reopen ಮತ್ತು export ಪೂರ್ಣಗೊಳಿಸಿ.
+
+
+
+
+
+
+
+
+
+
+
+ಹಂತ 4 — Windows App ನಿರ್ಮಿಸಿ
+
+Electron ಅನ್ನು ಸೇರಿಸಿ. ಸ್ಥಳೀಯ ಫೈಲ್‌ಗಳು, SQLite ಮತ್ತು FFmpeg ಕಾರ್ಯಗಳನ್ನು ಸುರಕ್ಷಿತ desktop APIs ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ. ನಂತರ Windows installer ನಿರ್ಮಿಸಿ.
+
+
+
+4. ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಬೇಕಾಗುವ Software
+
+
+
+
+
+
+
+
+
+Node.js LTS
+
+Project dependencies ಮತ್ತು build commands ರನ್ ಮಾಡಲು.
+
+Node.js ಡೌನ್‌ಲೋಡ್
+
+
+
+
+
+
+
+
+
+
+
+
+Git (ಶಿಫಾರಸು)
+
+ಕೋಡ್‌ನ ಬದಲಾವಣೆಗಳನ್ನು ನಿರ್ವಹಿಸಲು.
+
+Git ಡೌನ್‌ಲೋಡ್
+
+
+
+
+
+
+
+
+
+
+
+
+FFmpeg
+
+ವೀಡಿಯೊಗಳನ್ನು ನಿಜವಾಗಿ render, encode ಮತ್ತು export ಮಾಡಲು. Desktop appಗೆ ಹೊಂದುವ build ಆಯ್ಕೆಮಾಡಿ.
+
+FFmpeg ಡೌನ್‌ಲೋಡ್ ಮಾಹಿತಿ
+
+
+
+5. Antigravityನಲ್ಲಿ ಬಳಸುವ Build Commands
+AI builder project files ಸೃಷ್ಟಿಸಿದ ನಂತರ, terminalನಲ್ಲಿ ಕೆಳಗಿನ commands ಅನ್ನು ಅಗತ್ಯಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಬಳಸಿ. ಮೊದಲು project folderನಲ್ಲಿ ಇರುವ package.json ಮತ್ತು ಅದರ scripts ಪರಿಶೀಲಿಸಿ.
+npm install
+npm run dev
+
+
+ಇದು ಅಭಿವೃದ್ಧಿ ಸರ್ವರ್ ಅನ್ನು ಆರಂಭಿಸುತ್ತದೆ; terminal ತೋರಿಸುವ ಸ್ಥಳೀಯ ವಿಳಾಸವನ್ನು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ.
+
+Desktop development script ಅನ್ನು projectನಲ್ಲಿ configure ಮಾಡಿದ ನಂತರ:
+npm run desktop:dev
+
+
+Production build ಮತ್ತು Windows installer scripts ಅನ್ನು package.jsonನಲ್ಲಿ ಸೇರಿಸಿದ ನಂತರ:
+npm run build
+npm run desktop:build
+
+
+ಈ script ಹೆಸರುಗಳು projectನಲ್ಲಿ ಈಗಾಗಲೇ ಇರಬೇಕೆಂದಿಲ್ಲ. ಅವುಗಳನ್ನು ಸರಿಯಾಗಿ configure ಮಾಡಲು Antigravityಗೆ ಸೂಚಿಸಿ. npm run ಬಳಸಿ ಲಭ್ಯವಿರುವ scripts ಪರಿಶೀಲಿಸಬಹುದು.
+6. ಅಂತಿಮವಾಗಿ ಪರಿಶೀಲಿಸಬೇಕಾದ Test Checklist
+Testing Progress
+
+0 / 9 ಪರಿಶೀಲನೆಗಳು
+
+
+
+[ ] ವೀಡಿಯೊ import ಆಗುತ್ತದೆ ಮತ್ತು previewನಲ್ಲಿ ಪ್ಲೇ ಆಗುತ್ತದೆ
+[ ] ಎರಡು ಅಥವಾ ಹೆಚ್ಚಿನ video tracks ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ
+[ ] Clip trim, split, move ಮತ್ತು undo/redo ಕೆಲಸ ಮಾಡುತ್ತವೆ
+[ ] Audio, text ಮತ್ತು subtitles preview ಹಾಗೂ exportನಲ್ಲಿ ಸಿಂಕ್ ಆಗಿವೆ
+[ ] Project save ಮಾಡಿ ಅಪ್ಲಿಕೇಶನ್ ಮರುತೆರೆದಾಗ ಸರಿಯಾಗಿ ಬರುತ್ತದೆ
+[ ] MP4 export ನಿಜವಾಗಿ ಪೂರ್ಣಗೊಳ್ಳುತ್ತದೆ ಮತ್ತು output ಪ್ಲೇ ಆಗುತ್ತದೆ
+[ ] ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ UI ಬದಲಾವಣೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ
+[ ] ವೀಡಿಯೊಗಳು ಅನುಮತಿಯಿಲ್ಲದೆ cloudಗೆ ಅಪ್‌ಲೋಡ್ ಆಗುವುದಿಲ್ಲ
+[ ] Windows installer ಇನ್ನೊಂದು ಪರೀಕ್ಷಾ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ತೆರೆಯುತ್ತದೆ
+ಇವು ನೀವು ಕೈಯಾರೆ ದೃಢೀಕರಿಸಲು ಇರುವ checklist ಅಂಶಗಳು. ಟಿಕ್ ಮಾಡುವುದು ಸ್ವಯಂಚಾಲಿತ ಪರೀಕ್ಷೆ ನಡೆದಿರುವುದನ್ನು ಸೂಚಿಸುವುದಿಲ್ಲ.
