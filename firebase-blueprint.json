@@ -1,0 +1,78 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information and creator settings",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "channelName": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId"]
+    },
+    "ContentProject": {
+      "title": "ContentProject",
+      "description": "Video and social media content creation project",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "platform": { "type": "string" },
+        "format": { "type": "string" },
+        "status": { "type": "string" },
+        "scriptText": { "type": "string" },
+        "captionText": { "type": "string" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["id", "title"]
+    },
+    "MangaStory": {
+      "title": "MangaStory",
+      "description": "Manga story with chapters and multi-modal outputs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "genre": { "type": "string" },
+        "synopsis": { "type": "string" },
+        "authorName": { "type": "string" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["id", "title"]
+    },
+    "GitHubRepoRecord": {
+      "title": "GitHubRepoRecord",
+      "description": "Synced GitHub repository metadata",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "language": { "type": "string" },
+        "stargazersCount": { "type": "number" },
+        "description": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Stores user settings and profile metadata"
+    },
+    "/users/{userId}/content_projects/{projectId}": {
+      "schema": "ContentProject",
+      "description": "User created video projects"
+    },
+    "/users/{userId}/manga_stories/{storyId}": {
+      "schema": "MangaStory",
+      "description": "User manga stories and chapters"
+    },
+    "/users/{userId}/github_repos/{repoId}": {
+      "schema": "GitHubRepoRecord",
+      "description": "User synced GitHub repositories"
+    }
+  }
+}
