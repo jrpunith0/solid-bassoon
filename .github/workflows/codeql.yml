@@ -1,0 +1,91 @@
+# CodeQL configuration for the languages present in this repository.
+name: "CodeQL Advanced"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '44 14 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - language: actions
+          build-mode: none
+        - language: java-kotlin
+          build-mode: manual
+        - language: javascript-typescript
+          build-mode: none
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Match the supported toolchain and Gradle installation used by Android CI.
+    # This repository uses the installed 'gradle' command, not gradlew.
+    - name: Set up JDK 17
+      if: matrix.language == 'java-kotlin'
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Set up Android SDK
+      if: matrix.language == 'java-kotlin'
+      uses: android-actions/setup-android@v3
+      with:
+        packages: "platform-tools platforms;android-36.1 build-tools;36.0.0"
+
+    - name: Set up Gradle
+      if: matrix.language == 'java-kotlin'
+      uses: gradle/actions/setup-gradle@v4
+      with:
+        gradle-version: "9.3.1"
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v4
+      with:
+        languages: ${{ matrix.language }}
+        build-mode: ${{ matrix.build-mode }}
+
+    # The app's debugConfig signing config expects this file at the repository root.
+    # Generate an ephemeral CI-only key, matching the Android CI workflow; never use it for releases.
+    - name: Ensure Android debug keystore exists
+      if: matrix.language == 'java-kotlin'
+      shell: bash
+      run: |
+        if [[ ! -f debug.keystore ]]; then
+          keytool -genkeypair -v \
+            -keystore debug.keystore \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -dname "CN=Android Debug,O=Android,C=US" \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000
+        fi
+        test -s debug.keystore
+
+    - name: Build Android debug variant for CodeQL
+      if: matrix.language == 'java-kotlin'
+      shell: bash
+      run: gradle --no-daemon --no-build-cache clean :app:assembleDebug
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v4
+      with:
+        category: "/language:${{matrix.language}}"

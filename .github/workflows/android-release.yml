@@ -1,0 +1,199 @@
+name: Android production release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Verify signing and build release AAB
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      RELEASE_CERT_SHA256: ${{ vars.RELEASE_CERT_SHA256 }}
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: "platform-tools platforms;android-36.1 build-tools;36.0.0"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Restore and validate production upload keystore
+        id: validate-signing
+        shell: bash
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/upload-keystore.jks
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+
+          for name in RELEASE_KEYSTORE_BASE64 STORE_PASSWORD KEY_PASSWORD RELEASE_CERT_SHA256; do
+            if [[ -z "${!name:-}" ]]; then
+              echo "::error::Required production signing setting is missing: $name"
+              exit 1
+            fi
+          done
+
+          normalize_sha256() {
+            local value
+            value="$(printf '%s' "$1" | tr -d ':[:space:]' | tr '[:lower:]' '[:upper:]')"
+            if [[ ! "$value" =~ ^[A-F0-9]{64}$ ]]; then
+              return 1
+            fi
+            printf '%s' "$value"
+          }
+
+          if ! expected="$(normalize_sha256 "$RELEASE_CERT_SHA256")"; then
+            echo "::error::RELEASE_CERT_SHA256 must normalize to exactly 64 hexadecimal SHA-256 characters."
+            exit 1
+          fi
+          printf 'normalized_sha256=%s\n' "$expected" >> "$GITHUB_OUTPUT"
+
+          umask 077
+          if ! printf '%s' "$RELEASE_KEYSTORE_BASE64" | base64 --decode > "$KEYSTORE_PATH"; then
+            echo "::error::Could not decode RELEASE_KEYSTORE_BASE64."
+            exit 1
+          fi
+          if [[ ! -s "$KEYSTORE_PATH" ]]; then
+            echo "::error::Decoded upload keystore is empty."
+            exit 1
+          fi
+          chmod 600 "$KEYSTORE_PATH"
+
+          if ! keytool -list -v -keystore "$KEYSTORE_PATH" \
+            -storepass "$STORE_PASSWORD" -alias upload \
+            > "$RUNNER_TEMP/upload-alias-details.txt" 2>&1; then
+            echo "::error::Could not open upload keystore or find alias upload."
+            exit 1
+          fi
+
+          mapfile -t key_fingerprints < <(
+            awk '/SHA256:/ { sub(/^.*SHA256:[[:space:]]*/, ""); print }' \
+              "$RUNNER_TEMP/upload-alias-details.txt" |
+              while IFS= read -r fp; do
+                printf '%s\n' "$fp" | tr -d ':[:space:]' | tr '[:lower:]' '[:upper:]'
+              done
+          )
+          if [[ "${#key_fingerprints[@]}" -ne 1 || ! "${key_fingerprints[0]}" =~ ^[A-F0-9]{64}$ ]]; then
+            echo "::error::Could not extract exactly one valid SHA-256 fingerprint for alias upload."
+            exit 1
+          fi
+          if [[ "${key_fingerprints[0]}" != "$expected" ]]; then
+            echo "::error::Upload keystore certificate fingerprint does not match RELEASE_CERT_SHA256."
+            exit 1
+          fi
+
+          echo "Upload keystore opened; alias upload exists; normalized certificate fingerprint matches."
+
+      - name: Run release unit tests
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/upload-keystore.jks
+          STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: ./gradlew --no-daemon --no-configuration-cache :app:testReleaseUnitTest
+
+      - name: Build signed release Android App Bundle
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/upload-keystore.jks
+          STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: ./gradlew --no-daemon --no-configuration-cache :app:bundleRelease
+
+      - name: Verify signed AAB and embedded certificate fingerprint
+        id: verify-aab
+        shell: bash
+        env:
+          EXPECTED_CERT_SHA256: ${{ steps.validate-signing.outputs.normalized_sha256 }}
+        run: |
+          set -euo pipefail
+          aab="app/build/outputs/bundle/release/app-release.aab"
+          if [[ ! -s "$aab" ]]; then
+            echo "::error::Release AAB is missing or empty."
+            exit 1
+          fi
+
+          if [[ ! "$EXPECTED_CERT_SHA256" =~ ^[A-F0-9]{64}$ ]]; then
+            echo "::error::Normalized expected certificate fingerprint is missing or invalid."
+            exit 1
+          fi
+
+          # AABs use JAR signing. apksigner is APK-only; jarsigner verifies the AAB.
+          if ! jarsigner -verify -verbose -certs "$aab" \
+            > "$RUNNER_TEMP/aab-signature-verification.txt" 2>&1; then
+            echo "::error::AAB JAR signature verification failed."
+            exit 1
+          fi
+          if ! grep -Eiq '^jar verified\.$' "$RUNNER_TEMP/aab-signature-verification.txt"; then
+            echo "::error::jarsigner did not report a verified AAB."
+            exit 1
+          fi
+          if grep -Eiq 'jar is unsigned|unsigned entries' "$RUNNER_TEMP/aab-signature-verification.txt"; then
+            echo "::error::AAB contains unsigned content or is not fully signed."
+            exit 1
+          fi
+
+          if ! keytool -printcert -jarfile "$aab" \
+            > "$RUNNER_TEMP/aab-certificate.txt" 2>&1; then
+            echo "::error::Could not extract signer certificate from the AAB."
+            exit 1
+          fi
+
+          mapfile -t aab_fingerprints < <(
+            awk '/SHA256:/ { sub(/^.*SHA256:[[:space:]]*/, ""); print }' \
+              "$RUNNER_TEMP/aab-certificate.txt" |
+              while IFS= read -r fp; do
+                printf '%s\n' "$fp" | tr -d ':[:space:]' | tr '[:lower:]' '[:upper:]'
+              done |
+              sort -u
+          )
+          if [[ "${#aab_fingerprints[@]}" -ne 1 || ! "${aab_fingerprints[0]}" =~ ^[A-F0-9]{64}$ ]]; then
+            echo "::error::Could not extract exactly one unique valid SHA-256 signer fingerprint from the AAB."
+            exit 1
+          fi
+          if [[ "${aab_fingerprints[0]}" != "$EXPECTED_CERT_SHA256" ]]; then
+            echo "::error::AAB signer certificate does not match RELEASE_CERT_SHA256."
+            exit 1
+          fi
+
+          echo "AAB signature verified and signer certificate fingerprint matches."
+
+      # Keep this after the signature and fingerprint verification step.
+      # success() makes upload fail closed if any preceding check fails or is skipped.
+      - name: Upload verified release AAB
+        if: success() && steps.verify-aab.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Remove temporary signing material
+        if: always()
+        shell: bash
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/upload-keystore.jks
+        run: rm -f "${KEYSTORE_PATH:-}"
