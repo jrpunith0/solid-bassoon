@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Creator Studio Pro</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>pro.creatorstudio.app</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+
+	<!-- Hardware & Media Permissions for Creator Studio -->
+	<key>NSCameraUsageDescription</key>
+	<string>Creator Studio Pro needs camera access to record video clips and capture character reference photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Creator Studio Pro needs microphone access for voice-over narration and audio recording.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Creator Studio Pro accesses your photo library to import images for video generation and Manga panels.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Creator Studio Pro needs permission to save generated MP4 videos to your Photos album.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Creator Studio Pro uses speech recognition for automatic subtitle and transcription generation.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Creator Studio Pro discovers local rendering nodes and media sync services on your network.</string>
+
+	<!-- iPad & iPhone Supported Orientations -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- URL Schemes for Google Sign-In & Social OAuth -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>pro.creatorstudio.auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>creatorstudio</string>
+				<string>com.googleusercontent.apps.creatorstudio</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- Status Bar & UI Styling -->
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

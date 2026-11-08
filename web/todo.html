@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101426">
+  <meta name="description" content="A simple to-do list that saves your tasks in this browser.">
+  <title>My Tasks — Creator Studio Pro</title>
+  <link rel="stylesheet" href="todo.css">
+  <script src="todo.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Creator Studio Pro home"><span aria-hidden="true">✦</span> Creator Studio Pro</a>
+      <span class="storage-note"><span class="storage-dot" aria-hidden="true"></span> Saved on this device</span>
+    </header>
+
+    <section class="todo-card" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">A LITTLE MORE FOCUS</p>
+        <h1 id="page-title">My tasks<span class="title-period">.</span></h1>
+        <p class="subtitle">Write it down, make it happen.</p>
+      </div>
+
+      <form class="add-form" id="add-form">
+        <label class="visually-hidden" for="task-input">Add a task</label>
+        <input id="task-input" name="task" type="text" maxlength="200" placeholder="What needs to get done?" autocomplete="off" required>
+        <button class="add-button" type="submit"><span aria-hidden="true">+</span> Add task</button>
+      </form>
+
+      <section class="ai-planner" aria-labelledby="ai-title">
+        <div class="ai-heading">
+          <span class="ai-spark" aria-hidden="true">✦</span>
+          <div>
+            <h2 id="ai-title">Plan it with ChatGPT</h2>
+            <p>Turn a goal into small, actionable tasks.</p>
+          </div>
+          <span class="ai-badge">AI</span>
+        </div>
+        <form id="ai-plan-form" class="ai-form">
+          <label class="visually-hidden" for="ai-goal">Describe what you want to get done</label>
+          <textarea id="ai-goal" maxlength="1000" rows="2" placeholder="e.g. Prepare for my biology exam next Friday" required></textarea>
+          <button type="submit" id="ai-plan-button"><span aria-hidden="true">✦</span> Make a plan</button>
+        </form>
+        <p id="ai-status" class="ai-status" role="status" aria-live="polite">AI planning needs an OpenAI API key configured on the backend.</p>
+        <ul id="ai-suggestions" class="ai-suggestions" aria-label="Suggested tasks" hidden></ul>
+      </section>
+
+      <div class="list-toolbar">
+        <p class="task-count" id="task-count" aria-live="polite">0 tasks left</p>
+        <div class="filters" role="group" aria-label="Filter tasks">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" class="filter-button" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+      </div>
+
+      <ul class="task-list" id="task-list" aria-label="Tasks"></ul>
+      <div class="empty-state" id="empty-state">
+        <span class="empty-icon" aria-hidden="true">☀</span>
+        <p class="empty-title">Nothing on your list yet</p>
+        <p class="empty-copy">Add a task above and get your momentum going.</p>
+      </div>
+
+      <footer class="list-footer">
+        <span id="completion-summary">A fresh start.</span>
+        <button type="button" class="clear-button" id="clear-completed">Clear completed</button>
+      </footer>
+    </section>
+    <p class="privacy-note">Your tasks stay in this browser. AI planning sends your goal and task titles to the configured OpenAI service.</p>
+  </main>
+</body>
+</html>
