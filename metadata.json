@@ -1,0 +1,8 @@
+{
+  "name": "Creator Studio",
+  "description": "YouTube video creator, remixer, script generator & automated publishing studio with GitHub Data Link.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
