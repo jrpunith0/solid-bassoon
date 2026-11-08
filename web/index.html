@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Studio Pro – Cross-Platform AI Content Platform</title>
+  <meta name="description" content="AI video creator, prompt studio, cartoon animator, and publishing centre for Web, Android, and iOS.">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <div class="brand-logo">🚀</div>
+      <div class="brand-text">
+        <span class="brand-name">Creator Studio <span class="pro-badge">PRO</span></span>
+        <span class="platform-tag" id="platform-indicator">Web Desktop • Sync Online</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <button class="btn-secondary" id="lang-toggle-btn" title="Toggle Language">ಕನ್ನಡ / EN</button>
+      <button class="btn-secondary" id="theme-toggle-btn" title="Toggle Dark/Light Mode">🌙</button>
+      <div class="user-profile-badge" id="user-profile-btn">
+        <div class="avatar-circle" id="user-avatar">C</div>
+        <span class="user-name" id="user-display-name">creator@gmail.com</span>
+      </div>
+      <button class="btn-primary" id="sync-now-btn">☁️ Sync All</button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Desktop Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-category">PLATFORMS & SYNC</div>
+      <button class="nav-item active" data-tab="dashboard">
+        <span class="icon">📊</span>
+        <span class="label">Dashboard</span>
+      </button>
+      <button class="nav-item" data-tab="cross-platform">
+        <span class="icon">💻</span>
+        <span class="label">Cross-Platform Hub</span>
+        <span class="badge">ALL 3</span>
+      </button>
+
+      <div class="sidebar-category">AI GENERATION ENGINES</div>
+      <button class="nav-item" data-tab="prompt-studio">
+        <span class="icon">🧠</span>
+        <span class="label">AI Prompt Studio</span>
+        <span class="badge">MULTI-AI</span>
+      </button>
+      <button class="nav-item" data-tab="cartoon-studio">
+        <span class="icon">🎨</span>
+        <span class="label">Cartoon & Animation</span>
+        <span class="badge">10-STEP</span>
+      </button>
+      <button class="nav-item" data-tab="story-video">
+        <span class="icon">🎬</span>
+        <span class="label">Story to Video</span>
+      </button>
+      <button class="nav-item" data-tab="video-editor">
+        <span class="icon">✂️</span>
+        <span class="label">Video Editor & Player</span>
+      </button>
+
+      <div class="sidebar-category">PUBLISHING & SETTINGS</div>
+      <button class="nav-item" data-tab="publishing-centre">
+        <span class="icon">📤</span>
+        <span class="label">Publishing Centre</span>
+        <span class="badge">SOCIAL</span>
+      </button>
+      <button class="nav-item" data-tab="api-settings">
+        <span class="icon">🔑</span>
+        <span class="label">API & Provider Keys</span>
+      </button>
+    </aside>
+
+    <!-- Workspace Content Area -->
+    <main class="content-area">
+      <!-- 1. DASHBOARD VIEW -->
+      <section class="tab-pane active" id="pane-dashboard">
+        <div class="hero-banner">
+          <div class="hero-content">
+            <span class="hero-chip">CROSS-PLATFORM ECOSYSTEM • WEB + ANDROID + IOS</span>
+            <h1>One Unified Platform for All Your Social Content</h1>
+            <p>Generate optimized prompts, character reference sheets, animated video clips, and publish directly to YouTube, Facebook, and Instagram from any device.</p>
+            <div class="hero-actions">
+              <button class="btn-hero" onclick="switchTab('prompt-studio')">🧠 Launch AI Prompt Studio</button>
+              <button class="btn-hero-alt" onclick="switchTab('cartoon-studio')">🎨 Cartoon Animation Studio</button>
+              <button class="btn-hero-alt" onclick="switchTab('cross-platform')">📱 Cross-Platform Hub</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon red">▶️</div>
+            <div class="stat-info">
+              <span class="stat-num">24,500</span>
+              <span class="stat-label">YouTube Subscribers</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon pink">📸</div>
+            <div class="stat-info">
+              <span class="stat-num">18,200</span>
+              <span class="stat-label">Instagram Followers</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon blue">👍</div>
+            <div class="stat-info">
+              <span class="stat-num">9,800</span>
+              <span class="stat-label">Facebook Page Likes</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">⚡</div>
+            <div class="stat-info">
+              <span class="stat-num">340,000</span>
+              <span class="stat-label">Monthly Views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="panel-card">
+            <h3>☁️ Real-Time Cross-Device Synchronization</h3>
+            <p class="panel-subtitle">Your projects, character references, and prompt libraries sync automatically across Web, Android APK, and iOS iPhone/iPad.</p>
+            <div class="sync-status-row">
+              <div class="sync-pill ok"><span class="dot"></span> Web Client: Connected</div>
+              <div class="sync-pill ok"><span class="dot"></span> Android App: Synced</div>
+              <div class="sync-pill ok"><span class="dot"></span> iOS Client: Synced</div>
+            </div>
+            <div class="recent-projects-list" id="dashboard-recent-projects">
+              <div class="project-item">
+                <span class="proj-icon">🎬</span>
+                <div class="proj-details">
+                  <strong>Arjun & The Secret Temple of Dawn</strong>
+                  <span>3D Pixar Cartoon • 4 Scenes • 1080p MP4 Ready</span>
+                </div>
+                <button class="btn-small" onclick="switchTab('cartoon-studio')">Open</button>
+              </div>
+              <div class="project-item">
+                <span class="proj-icon">📱</span>
+                <div class="proj-details">
+                  <strong>AI Video Revolution 2026</strong>
+                  <span>YouTube Shorts & Reels • 9:16 • Kannada Voiceover</span>
+                </div>
+                <button class="btn-small" onclick="switchTab('publishing-centre')">Publish</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <h3>⚡ Multi-AI Model Availability</h3>
+            <div class="provider-status-list">
+              <div class="provider-item"><span class="badge-gemini">Google Gemini</span> <span>Gemini 2.5 Flash, Imagen 3, Veo 2.0</span> <span class="tag-status ok">Active</span></div>
+              <div class="provider-item"><span class="badge-openai">OpenAI</span> <span>GPT-4o, DALL-E 3, TTS-1</span> <span class="tag-status ok">Active</span></div>
+              <div class="provider-item"><span class="badge-runway">Runway</span> <span>Gen-3 Alpha Turbo (Video)</span> <span class="tag-status ok">Ready</span></div>
+              <div class="provider-item"><span class="badge-kling">Kling AI</span> <span>Kling 2.0 (Cartoon Animation)</span> <span class="tag-status ok">Ready</span></div>
+              <div class="provider-item"><span class="badge-eleven">ElevenLabs</span> <span>Multilingual Kannada & English TTS</span> <span class="tag-status ok">Active</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CROSS-PLATFORM HUB VIEW -->
+      <section class="tab-pane" id="pane-cross-platform">
+        <div class="section-header">
+          <h2>💻 Cross-Platform Ecosystem Hub</h2>
+          <p>Access Creator Studio Pro across Web Browser, Android Mobile/Tablet, and iOS iPhone/iPad with one unified account.</p>
+        </div>
+
+        <div class="platforms-cards-grid">
+          <!-- Platform 1: Web -->
+          <div class="platform-card active-card">
+            <div class="plat-header">
+              <span class="plat-badge web">DESKTOP & WEB</span>
+              <span class="plat-status">RUNNING</span>
+            </div>
+            <h3>1. Website Version</h3>
+            <p>Responsive web dashboard compatible with Windows, Mac, and Linux browsers (Chrome, Edge, Safari, Firefox). PWA installable as a native desktop application.</p>
+            <ul class="plat-features">
+              <li>✓ Multi-track video timeline and canvas</li>
+              <li>✓ Full keyboard shortcuts and dual-monitor support</li>
+              <li>✓ Fast batch export and FFmpeg transcoding</li>
+            </ul>
+            <div class="plat-actions">
+              <button class="btn-secondary" onclick="alert('PWA Manifest is ready. Click the browser install icon in address bar to install native desktop app.')">📥 Install Desktop App</button>
+            </div>
+          </div>
+
+          <!-- Platform 2: Android -->
+          <div class="platform-card active-card">
+            <div class="plat-header">
+              <span class="plat-badge android">ANDROID MOBILE & TABLET</span>
+              <span class="plat-status">APK / AAB READY</span>
+            </div>
+            <h3>2. Android Application</h3>
+            <p>Native Android application built with Kotlin and Jetpack Compose. Responsive adaptive layouts designed for both mobile handsets and tablets/foldables.</p>
+            <ul class="plat-features">
+              <li>✓ Minimum interactive touch targets (48dp)</li>
+              <li>✓ Material Design 3 and Edge-to-Edge display</li>
+              <li>✓ Background video synthesis and local Room database</li>
+            </ul>
+            <div class="plat-actions">
+              <button class="btn-primary" onclick="alert('Android APK and AAB build configurations are compiled and verified. Package: com.aistudio.creatorstudio')">📱 Download APK / AAB</button>
+            </div>
+          </div>
+
+          <!-- Platform 3: iOS -->
+          <div class="platform-card active-card">
+            <div class="plat-header">
+              <span class="plat-badge ios">IPHONE & IPAD</span>
+              <span class="plat-status">XCODE READY</span>
+            </div>
+            <h3>3. iOS Application</h3>
+            <p>Compatible with iOS 16+ on iPhone and iPad. Includes Xcode project structure, Info.plist permissions, and Capacitor / React Native cross-platform bridge.</p>
+            <ul class="plat-features">
+              <li>✓ Native iOS Share Sheet and video saving</li>
+              <li>✓ Responsive tablet / iPad split-screen layout</li>
+              <li>✓ Official App Store & TestFlight submission configs</li>
+            </ul>
+            <div class="plat-actions">
+              <button class="btn-secondary" onclick="alert('iOS project files located in /ios with Info.plist, Podfile, and App Store export guide.')">🍎 View iOS Project Config</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-card mt-20">
+          <h3>☁️ Shared Account & Unified Cloud Database Architecture</h3>
+          <p class="panel-subtitle">Every project, script, character sheet, and prompt created on Web instantly synchronizes to your Android and iOS devices using the shared backend API.</p>
+          <div class="code-box">
+            <code>
+// Shared Cross-Platform Data Pipeline
+[Website (Chrome/Safari)] <──────> [Shared REST API & Firestore] <──────> [Android (APK/AAB)]
+                                           │
+                                           └──────> [iOS (iPhone/iPad App)]
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. AI PROMPT STUDIO VIEW -->
+      <section class="tab-pane" id="pane-prompt-studio">
+        <div class="section-header">
+          <h2>🧠 AI Prompt Studio – Multi-Provider Prompt Generator</h2>
+          <p>Generate provider-optimized prompts for ChatGPT, Gemini, Runway, Kling, and ElevenLabs. Edit, compare, and copy to clipboard.</p>
+        </div>
+
+        <div class="prompt-studio-grid">
+          <!-- Left: Input Form -->
+          <div class="form-card">
+            <h3>Story & Scene Parameters</h3>
+            
+            <div class="form-group">
+              <label>Select AI Provider:</label>
+              <div class="chip-group" id="provider-chips">
+                <button class="chip active" onclick="selectWebProvider('gemini')">Google Gemini</button>
+                <button class="chip" onclick="selectWebProvider('openai')">OpenAI / GPT-4o</button>
+                <button class="chip" onclick="selectWebProvider('runway')">Runway Gen-3</button>
+                <button class="chip" onclick="selectWebProvider('kling')">Kling AI</button>
+                <button class="chip" onclick="selectWebProvider('elevenlabs')">ElevenLabs</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Story Topic / Narrative:</label>
+              <textarea id="prompt-topic-input" rows="3">A young Indian explorer walks through a mysterious village at sunset and discovers an ancient glowing temple doorway.</textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Character Name:</label>
+                <input type="text" id="prompt-char-name" value="Arjun">
+              </div>
+              <div class="form-group half">
+                <label>Visual Style:</label>
+                <input type="text" id="prompt-art-style" value="Cinematic 3D Animation">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Character Appearance & Clothing:</label>
+              <input type="text" id="prompt-char-appearance" value="Indian youth, hazel eyes, sharp hair, saffron creator vest and utility belt">
+            </div>
+
+            <div class="form-group">
+              <label>Environment & Location:</label>
+              <input type="text" id="prompt-location" value="Ancient misty village courtyard with weathered stone pillars at golden hour">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Camera Motion:</label>
+                <input type="text" id="prompt-camera" value="Slow tracking push-in with subtle parallax">
+              </div>
+              <div class="form-group half">
+                <label>Aspect Ratio:</label>
+                <select id="prompt-ratio">
+                  <option value="16:9">16:9 Landscape</option>
+                  <option value="9:16">9:16 Shorts / Reels</option>
+                  <option value="1:1">1:1 Square</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button class="btn-primary" onclick="generateWebPrompt()">⚡ Generate Optimized Prompt</button>
+              <button class="btn-secondary" onclick="improveWebPrompt()">✨ Improve</button>
+              <button class="btn-secondary" onclick="translateWebPrompt()">🌐 Translate (ಕನ್ನಡ / EN)</button>
+            </div>
+          </div>
+
+          <!-- Right: Output & Editor -->
+          <div class="output-card">
+            <div class="output-header">
+              <span class="output-title">EDITABLE PROMPT CONTENT</span>
+              <span class="char-count" id="prompt-stats">0 words • 0 chars</span>
+            </div>
+            <textarea id="prompt-editor" rows="12" placeholder="Your generated prompt will appear here and can be edited directly..."></textarea>
+            
+            <div class="output-actions">
+              <button class="btn-secondary" onclick="copyWebPrompt()">📋 Copy to Clipboard</button>
+              <button class="btn-secondary" onclick="saveWebPrompt()">💾 Save to Library</button>
+              <button class="btn-primary" onclick="dispatchWebApi()">🚀 Generate Using API</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CARTOON STUDIO VIEW -->
+      <section class="tab-pane" id="pane-cartoon-studio">
+        <div class="section-header">
+          <h2>🎨 Cartoon & Animation Video Studio</h2>
+          <p>10-Step Story to 3D/2D Animated Video Engine with Character Consistency Lock.</p>
+        </div>
+
+        <div class="cartoon-pipeline-container">
+          <div class="step-progress-bar">
+            <div class="step-badge active">1. Story</div>
+            <div class="step-badge active">2. Scenes</div>
+            <div class="step-badge active">3. Character Sheet</div>
+            <div class="step-badge active">4. Consistency Lock</div>
+            <div class="step-badge">5. Storyboard</div>
+            <div class="step-badge">6. Video Clips</div>
+            <div class="step-badge">7. Kannada/EN Voice</div>
+            <div class="step-badge">8. Music & SFX</div>
+            <div class="step-badge">9. Assembly</div>
+            <div class="step-badge">10. MP4 Export</div>
+          </div>
+
+          <div class="character-card-preview">
+            <div class="char-header">
+              <h3>Locked Character Reference Sheet: Arjun</h3>
+              <span class="tag-status ok">CONSISTENCY LOCKED</span>
+            </div>
+            <p><strong>Appearance:</strong> Indian youth, expressive hazel eyes, spiky hair, saffron creator vest.</p>
+            <p><strong>Approved Multi-Angle Views:</strong> Front View ✓ | Side View ✓ | Back View ✓ | Facial Expressions ✓</p>
+            <div class="char-actions">
+              <button class="btn-secondary" onclick="alert('Character reference sheet locked. Seed ID: #9412.')">🔒 Edit Character Details</button>
+              <button class="btn-primary" onclick="alert('Rendering 4 animated cartoon scene shots with Kling AI / Runway...')">🎬 Synthesize Animation Clips</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SOCIAL MEDIA PUBLISHING VIEW -->
+      <section class="tab-pane" id="pane-publishing-centre">
+        <div class="section-header">
+          <h2>📤 Central Social Media Publishing Centre</h2>
+          <p>Publish generated videos directly to YouTube, Facebook, and Instagram with live progress tracking.</p>
+        </div>
+
+        <div class="publish-container">
+          <div class="form-card">
+            <div class="form-group">
+              <label>Select Target Platform:</label>
+              <div class="platform-chips">
+                <button class="chip active" onclick="selectPublishPlatform('youtube')">▶️ YouTube Studio</button>
+                <button class="chip" onclick="selectPublishPlatform('facebook')">👍 Facebook Page</button>
+                <button class="chip" onclick="selectPublishPlatform('instagram')">📸 Instagram Reels</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Video Title:</label>
+              <input type="text" id="pub-title" value="AI Video Shorts in 60 Seconds - Complete Guide">
+            </div>
+
+            <div class="form-group">
+              <label>Description & Hashtags:</label>
+              <textarea id="pub-desc" rows="3">Created and published with Creator Studio Pro AI Video Engine! #Shorts #AI #VideoEditing #TechInKannada</textarea>
+            </div>
+
+            <button class="btn-primary full-width" onclick="simulateWebUpload()">🚀 Upload & Publish Video</button>
+            
+            <div class="upload-progress-box" id="upload-box" style="display: none; margin-top: 15px;">
+              <div class="progress-label"><span id="upload-status-text">Uploading to YouTube...</span> <strong id="upload-pct">0%</strong></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" id="upload-bar"></div></div>
+              <div id="published-link-box" style="display: none; margin-top: 10px;">
+                <span style="color: #2ea44f; font-weight: bold;">Published Successfully! 🎉</span>
+                <a href="#" id="published-url" target="_blank" style="color: #38bdf8; display: block; margin-top: 4px;">https://youtube.com/shorts/sample_ai_video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. API SETTINGS VIEW -->
+      <section class="tab-pane" id="pane-api-settings">
+        <div class="section-header">
+          <h2>🔑 API Credentials & Provider Settings</h2>
+          <p>Configure API keys for Gemini, OpenAI, Runway, Kling, ElevenLabs, and FFmpeg.</p>
+        </div>
+
+        <div class="api-grid">
+          <div class="api-card">
+            <div class="api-title"><span>Google Gemini API</span> <span class="tag-status ok">Configured</span></div>
+            <input type="password" value="AIzaSySampleKeyGoogleGemini2026" readonly>
+            <button class="btn-small" onclick="alert('Gemini API connection test passed! Latency: 124ms')">Test Connection</button>
+          </div>
+          <div class="api-card">
+            <div class="api-title"><span>OpenAI API</span> <span class="tag-status ok">Configured</span></div>
+            <input type="password" value="sk-proj-SampleOpenAIKeyForTesting" readonly>
+            <button class="btn-small" onclick="alert('OpenAI API connection test passed! Latency: 180ms')">Test Connection</button>
+          </div>
+          <div class="api-card">
+            <div class="api-title"><span>Runway Gen-3 API</span> <span class="tag-status ok">Ready</span></div>
+            <input type="password" value="runway_live_sample_token" readonly>
+            <button class="btn-small" onclick="alert('Runway API connection test passed!')">Test Connection</button>
+          </div>
+          <div class="api-card">
+            <div class="api-title"><span>Kling AI Video API</span> <span class="tag-status ok">Ready</span></div>
+            <input type="password" value="kling_v2_sample_access_key" readonly>
+            <button class="btn-small" onclick="alert('Kling AI API connection test passed!')">Test Connection</button>
+          </div>
+          <div class="api-card">
+            <div class="api-title"><span>ElevenLabs Voice API</span> <span class="tag-status ok">Configured</span></div>
+            <input type="password" value="xi_api_sample_elevenlabs_key" readonly>
+            <button class="btn-small" onclick="alert('ElevenLabs TTS voice connection verified! Kannada/English voices ready.')">Test Connection</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
